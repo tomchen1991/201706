@@ -35,7 +35,7 @@ var enter=document.getElementById("enter");
 buttons.onclick=function(ev) {
 	var ev=ev || window.event;
 	var target = ev.target || ev.srcElement;
-	if(target.className=="numbers"&&compareAnswer.length<4) {
+	if(target.className=="numbers"&&compareAnswer.length<4&&target.disabled!=true) {
 		compareAnswer.push(target.innerHTML);
 		target.disabled=true;
 		setBlanks();
