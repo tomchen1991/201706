@@ -5,7 +5,7 @@ var remain=8;//剩余次数，也用来控制是否能继续比对
 //同步blanks和compareAnswer的函数
 function setBlanks() {
 	for (var i=0;i<blanks.length;i++) {
-		blanks[i].innerHTML=null;
+		blanks[i].innerHTML=undefined;
 		if(compareAnswer[i]!=undefined) {
 			blanks[i].innerHTML=compareAnswer[i];
 		}	
@@ -83,7 +83,7 @@ function changeText(arr) {
 		xAxB.innerHTML="0 A 0 B";
 		xAxB.style.backgroundColor="red";
 		remainTimes.innerHTML="还剩"+remain+"次机会";
-		histories.innerHTML=null;
+		histories.innerHTML=undefined;
 	}
 	else if(remain) {
 		remain--;
