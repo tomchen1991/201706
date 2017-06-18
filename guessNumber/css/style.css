@@ -1,0 +1,65 @@
+div {
+	text-align:center;
+}
+p,ol {
+	line-height: 30px;
+}
+#control,#result{
+	display:inline-block;
+	background-color:#FFA;
+	border:solid 1px gray;
+	height:550px;
+}
+#result {
+	width:200px;
+	vertical-align: top;
+}
+.blank {
+	display:inline-block;
+	height:100px;
+	width:80px;
+	font-size:70px;
+	font-weight:bold;
+	border:solid 2px gray;
+	vertical-align: top;
+	margin:auto;
+	background-color:#FDA;
+}
+#numKeyboard,#insertBox{
+	display:block;
+	padding:5px;
+	width:400px;
+}
+
+.numbers,#enter,#backspace {
+	display:inline-block;
+	height:100px;
+	width:100px;
+	border:solid 2px gray;
+	border-radius:40%;
+	vertical-align:middle;
+	font-size:50px;
+	font-weight:bold;
+	background-color:#BBD;
+	margin:2px auto;
+}
+#backspace {
+	background-color: red;
+}
+#enter {
+	background-color: green;
+}
+#newGame {
+	background-color: yellow;
+	margin:10px auto;
+	font-size:20px;
+	border:solid 1px black;
+	border-radius:10px;
+}
+#ABs {
+	margin:20px auto;
+	width:80%;
+	font-size:30px;
+	border:solid 1px black;
+	background-color: red;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>猜数字</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<div id="main">
+		<div id="control">
+			<!-- 数字的输入框 -->
+			<div id="insertBox">
+				<div class="blank"></div>
+				<div class="blank"></div>
+				<div class="blank"></div>
+				<div class="blank"></div>
+			</div>
+			<!-- 数字输入盘 -->
+			<div id="numKeyboard">
+				<button class="numbers">1</button>
+				<button class="numbers">2</button>
+				<button class="numbers">3</button>
+				<br>
+				<button class="numbers">4</button>
+				<button class="numbers">5</button>
+				<button class="numbers">6</button>
+				<br>
+				<button class="numbers">7</button>
+				<button class="numbers">8</button>
+				<button class="numbers">9</button>
+				<br>
+				<button class="numbers">0</button>
+				<button id="backspace"> &larr;</button>
+				<button id="enter" disabled=true> &crarr;</button>
+			</div>
+		</div>
+		<div id="result">
+			<!-- 反馈结果框 -->
+			<button id="newGame">重新开始</button>
+			<p id="ABs">0 A 0 B</p>
+			<p id="remainTimes">还剩8次机会</p>
+			<p>猜测记录：</p>
+			<ol id="history"></ol>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/1.js"></script>
+</body>
+</html>
