@@ -1,0 +1,48 @@
+body {
+	margin:0 auto;
+	padding:0;
+}
+
+#nav {
+	position:fixed;
+	top:0;
+	height:44px;
+}
+
+
+.developer {
+	float:left;
+	width:200px;
+	text-align:center;
+	vertical-align:top;
+}
+.developer p {
+	border:solid 1px grey;
+	background-color: #BBF;
+	margin:0;
+	padding:10px 0;
+}
+
+.developer div{
+	display:none;
+	background-color:#BBB;
+	border:solid 1px black;
+	padding:10px 0;
+}
+
+img{
+	float:left;
+	margin:20px;
+}
+
+#mainTable {
+	text-align: center;
+}
+
+th,td {
+	padding:10px;
+}
+#mainTable table {
+	width:100%;
+	border-collapse: inherit;
+}
