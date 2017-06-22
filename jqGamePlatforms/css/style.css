@@ -7,20 +7,24 @@ body {
 	position:fixed;
 	top:0;
 	height:44px;
+	z-index:3;
 }
 
-
-.developer {
+.developer,#newPlatform{
 	float:left;
 	width:200px;
 	text-align:center;
 	vertical-align:top;
 }
-.developer p {
+.developer p,#newPlatform p {
 	border:solid 1px grey;
 	background-color: #BBF;
 	margin:0;
 	padding:10px 0;
+}
+
+#newPlatform p:hover {
+	background-color: #F88;
 }
 
 .developer div{

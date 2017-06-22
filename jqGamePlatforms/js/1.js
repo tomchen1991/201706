@@ -1,5 +1,5 @@
 //设置浮动条的鼠标动作
-var htmlobj;
+var htmlobj; 
 $(".developer p").mouseover(function(){
 	var onP=$(this); 
 	onP.css("background-color","blue");
