@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Bangumi 番组计划</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="img/index.ico" type="image/x-icon" />
+</head>
+<body>
+	<div id="wrapperNav">
+		<div id="navContents">
+			<a href="/"><img src="img/logo.png" style="position:relative; top:10px"/></a>
+			<ul id="navIndex">
+				<li class="index1" id="anime">
+					<a href="http://bangumi.tv/anime">动画</a>
+					<ul class="addIndex">
+						<li class="addIndexLi">排行榜</li>
+						<li class="addIndexLi">每日放送</li>
+						<li class="addIndexLi">动画标签</li>
+						<li class="addIndexLi">分类浏览</li>
+						<li class="addIndexLi">动画日志</li>
+					</ul>
+				</li>
+				<li class="index1" id="book">
+					<a href="http://bangumi.tv/book">书籍</a>
+					<ul class="addIndex">
+						<li class="addIndexLi">排行榜</li>
+						<li class="addIndexLi">图书标签</li>
+						<li class="addIndexLi">分类浏览</li>
+						<li class="addIndexLi">图书日志</li>
+					</ul>
+				</li>
+				<li class="index1" id="music">
+					<a href="http://bangumi.tv/music">音乐</a>
+					<ul class="addIndex">
+						<li class="addIndexLi">排行榜</li>
+						<li class="addIndexLi">音乐标签</li>
+						<li class="addIndexLi">浏览全部</li>
+						<li class="addIndexLi">音乐日志</li>
+					</ul>
+				</li>
+				<li class="index1" id="game">
+					<a href="http://bangumi.tv/game">游戏</a>
+					<ul class="addIndex">
+						<li class="addIndexLi">排行榜</li>
+						<li class="addIndexLi">游戏标签</li>
+						<li class="addIndexLi">平台浏览</li>
+						<li class="addIndexLi">游戏日志</li>
+					</ul>
+				</li>
+				<li class="index1" id="real">
+					<a href="http://bangumi.tv/real">三次元</a>
+					<ul class="addIndex">
+						<li class="addIndexLi">排行榜</li>
+						<li class="addIndexLi">三次元标签</li>
+						<li class="addIndexLi">三次元日志</li>
+						<li class="addIndexLi">日剧</li>
+						<li class="addIndexLi">欧美剧</li>
+					</ul>
+				</li>
+				<li class="index2" id="mono">
+					<a href="http://bangumi.tv/mono">人物</a>
+					<ul class="addIndex">
+						<li class="addIndexLi">虚构人物</li>
+						<li class="addIndexLi">现实人物</li>
+					</ul>
+				</li>
+				<li class="index2" id="rakuen">
+					<a href="http://bangumi.tv/rakuen">超展开</a>
+				</li>
+				<li class="index2" id="group">
+					<a href="http://bangumi.tv/group">小组</a>
+					<ul class="addIndex">
+						<li class="addIndexLi">随便看看</li>
+						<li class="addIndexLi">所有小组</li>
+					</ul>
+				</li>
+				<li class="index2" id="search">
+					<a href="#">探索</a>
+				</li>
+			</ul>
+			<a href="http://doujin.bangumi.com"><img src="img/logo_doujin.png" /></a>
+			<div id="searchBox">
+				<select id="siteSearchSelect">
+					<option value="all">全部</option>
+					<option value="anime">动画</option>
+					<option value="book">书籍</option>
+					<option value="game">游戏</option>
+					<option value="music">音乐</option>
+					<option value="real">三次元</option>
+				</select>
+				<input id="searchText" type="text" />
+				<img src="img/ico_search.png" />
+			</div>
+		</div>
+	</div>
+	<h3> Hi! <a id="userName">userName</a></h1>
+	<div id="mainContent">
+		<div id="welcome">
+			<div id="welcomeText">
+				<h5>欢迎使用Bangumi管理收视进度</h5>
+				<p>在一天的忙碌过后终于闲下来看动画，却忘记之前看到了哪里？只需要在动画或三次元条目的收藏盒收藏动画，Bangumi 就可以开始为你管理你的动画收视。以下是你可能感兴趣的番组：</p>
+			</div>
+			<div id="interestBangumi">
+				<div class="bangumis">
+					<div class="image">
+						<img src="img/op.jpg" />
+					</div>
+					ONE PIECE
+				</div>
+				<div class="bangumis">
+					<div class="image">
+						<img src="img/yw.jpg" />
+					</div>
+					妖怪ウォッチ
+				</div>
+			</div>
+			<div id="interestSearch">
+				<select>
+					<option>动画</option>
+					<option>三次元</option>
+				</select>
+				<input type="text"/>
+			</div>
+		</div>
+		<div id="sideInner">
+			<div class="rightDrag">
+				<div class="dragBar">小组话题</div>
+			</div>
+			<div class="rightDrag">
+				<div class="dragBar">热门条目讨论</div>
+			</div>
+			<div class="rightDrag">
+				<div class="dragBar">每日放送</div>
+			</div>
+		</div>
+		<div class="timelineInner">
+			<ul id="timelineTabs">
+				<li><input type="radio" name="tabs" id="tltabAll" value="all" checked="true"><label for="tltabAll">所有</label></li>
+				<li><input type="radio" name="tabs" id="tltab1" value="tl1"><label for="tltab1">动态</label></li>
+				<li><input type="radio" name="tabs" id="tltab2" value="tl2"><label for="tltab2">吐槽</label></li>
+				<li><input type="radio" name="tabs" id="tltab3" value="tl3"><label for="tltab3">收藏</label></li>
+				<li><input type="radio" name="tabs" id="tltab4" value="tl4"><label for="tltab4">进度</label></li>
+				<li><input type="radio" name="tabs" id="tltab5" value="tl5"><label for="tltab5">日志</label></li>
+			</ul>
+			<div class="timeline tl1">
+				KOWOINEKO 将 mizudiwood 加为了好友 
+			</div>
+			<div class="timeline tl2">
+				看了一下bangumi上的声之形评论，想不到大家对这部作品的抱怨这么大。 总觉得抱怨的不是地方，强行强行洗白。 
+			</div>
+			<div class="timeline tl3">
+				Coverbil 想看 スロウスタート
+			</div>
+			<div class="timeline tl4">
+				 离群客 看过 ep.10 タイフーン襲来 少女たちは荒野を目指す
+			</div>
+			<div class="timeline tl5">
+				文学少女的⑨ 发表了新日志：【剧透】Nega0时间线整理
+			</div>
+			<div class="timeline tl5">
+				缘离飞翼 发表了新日志：反抗的意志中诞生出的自由
+			</div>
+			<div class="timeline tl3">
+				离群客 想玩 Crusader Kings 2
+			</div>
+			<div class="timeline tl1">
+				DarkNexus 将 ふうふう 加为了好友  
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/1.js"></script>
+</html>
