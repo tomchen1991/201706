@@ -162,7 +162,7 @@ h3 {
 
 #mainContent {
 	width:980px;
-	margin:0 auto;
+	margin:10px auto;
 }
 
 #welcome {
@@ -311,16 +311,16 @@ h3 {
 	height:300px;
 	position:relative;
 	-moz-user-select: none;
-	user-select: none;
+	user-select: none;	
+	text-align:center;
 }
 
 .rightDrag .dragBar {
-	height:30px;
+	padding:5px;
 	color:blue;
 	border-bottom:solid 1px #333;
 }
 
 .rightDrag li {
 	padding:5px;
-	text-align:center;
 }

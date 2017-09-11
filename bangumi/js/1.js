@@ -52,6 +52,7 @@ function draw(node,obj) {
 		var li1=document.createElement("li");
 		li1.innerHTML=i;
 		ul.appendChild(li1);
+		li1.style.backgroundColor="#DDD";
 		var li2= document.createElement("li");
 		li2.innerHTML=obj[i];
 		li2.style.fontSize="13px";
@@ -75,6 +76,7 @@ document.getElementById("sideInner").onmousedown=function(ev) {
 		target.style.cursor = "move";
 		sideInner.insertBefore(placeHolder,movingNode);
 		movingNode.style.position="absolute";
+		movingNode.style.top=ev.clientY-Y+"px";
 		document.onmousemove = function(e) {
 			var e = e || window.event;
 			movingNode.style.zIndex="2";
